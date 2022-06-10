@@ -1,0 +1,132 @@
+body{
+  background-color: beige;
+}
+
+h1 {
+  color: black;
+  text-align: right;
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* footer */
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:  #ab8b72;
+   color: white;
+   text-align: center;
+}
+
+
+/* side menu */
+
+
+ .sidenav {
+height: 100%;
+  width: 400px;
+  position: sticky;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 75px;
+}
+
+
+.sidenav a {
+padding: 6px 8px 6px 16px;
+margin: 25px 50px 75px;
+  text-decoration: none;
+  font-size: 25px;
+  background: beige;
+  color: black;
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.sidenav a:hover {
+  background: #ab8b72;
+  color: white;
+}
+
+.sidenav a.active {
+  background: #ab8b72;
+  color: white;
+}
+
+.main {
+  margin-left: 250px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/* header */
+
+.header {
+  overflow: hidden;
+  background-color: beige;
+  padding: 20px 50px;
+
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background: #ab8b72;
+  color: white;
+}
+
+.header a.active {
+  background: #ab8b72;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
