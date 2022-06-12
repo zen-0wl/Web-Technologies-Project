@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menuproject.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: 50;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: beige;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: beige;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+</style>
+
+  </head>
+  <body>
+    <div class="header">
+      <a href="#default" class="logo">LARGH-NEST</a>
+      <div class="header-right">
+        <a class="active" href="#home">Menu</a>
+        <a href="#about">About us</a>
+        <a href="#cart">My Cart</a>
+      </div>
+    </div>
+
+    <h1 style="text-align: center">Espresso</h1>
+
+
+
+    <div class="grid-container">
+
+      <div class="item2"><img src="espresso.jpg" alt="espresso" style="width:20%" ></div>
+      <div class="item3">Awal (espresso)</div>
+      <div class="item4">RM 3</div>
+      <div class="item5">	- Just espresso <br>
+        - 30 saat jer!</div>
+    </div>
+
+    <div class="grid-container">
+
+      <div class="item2"><img src="malaysiano.jpg" alt="malaysiano" style="width:20%" ></div>
+      <div class="item3">Malaysiano (americano)</div>
+      <div class="item4">RM 4</div>
+      <div class="item5">		- Espresso + water<br>
+      - Kopi diet
+      </div>
+    </div>
+
+
+
+    <div class="grid-container">
+
+      <div class="item2"><img src="micha.jpg" alt="micha" style="width:20%" ></div>
+      <div class="item3">Micha (Mocha)</div>
+      <div class="item4">RM 6</div>
+      <div class="item5">	- Latte + choc <br>
+        - Rhythm with Jamaica so stamina mina <br> a a waka waka a a ( asal nyanyi lak )</div>
+    </div>
+
+    <div class="grid-container">
+
+      <div class="item2"><img src="sparkling.jpg" alt="sparkling" style="width:20%" ></div>
+      <div class="item3">Sparkling juice</div>
+      <div class="item4">RM 5</div>
+      <div class="item5">	- Flavored syrup + water + CO2<br>
+    	- Air buah sedut CO2
+      </div>
+    </div>
+
+
+    <div class="grid-container">
+
+      <div class="item2"><img src="fruittesso.jpg" alt="fruitesso" style="width:20%" ></div>
+      <div class="item3">Fruitesso</div>
+      <div class="item4">RM 7</div>
+      <div class="item5">	- Espresso + sparkling juice<br>
+      - Kopi rasa buah
+      </div>
+    </div>
+
+
+
+    <div class="grid-container">
+
+      <div class="item2"><img src="topicino.jpg" alt="topicino" style="width:20%" ></div>
+      <div class="item3">Topi Cino (cappuccino)</div>
+      <div class="item4">RM 5.50</div>
+      <div class="item5">		- Latte + foam <br>
+      -  otw buih lebih
+      </div>
+    </div>
+
+    <div class="grid-container">
+
+      <div class="item2"><img src="topicinooo.jpg" alt="topicinooo" style="width:20%" ></div>
+      <div class="item3">Topi CinooO (macchiato)</div>
+      <div class="item4">RM 5.50</div>
+      <div class="item5">		- Cappuccino + more foam <br>
+      -  Sama je macam atas, buih je lebih
+      </div>
+    </div>
+
+
+
+<div class="footer">
+  <p>Contact us</p>
+</div>
+
+
+  </body>
+</html>
