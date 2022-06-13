@@ -17,21 +17,15 @@ img {
 
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+    'menu menu menu main main right'
+    'menu menu menu footer footer footer';
   gap: 10px;
   background-color: beige;
-  padding: 10px;
+  padding: 5px;
 }
 
 .grid-container > div {
@@ -39,6 +33,20 @@ img {
   text-align: left;
   padding: 20px 0;
   font-size: 30px;
+}
+
+.grid-container {
+   display: grid;
+   grid-auto-columns: 1fr;
+}
+
+.grid-items {
+   grid-row: 1;
+}
+
+
+.item3, .item4{
+  font-weight: bold;
 }
 
 </style>
@@ -79,57 +87,6 @@ img {
 
 
 
-    <div class="grid-container">
-
-      <div class="item2"><img src="micha.jpg" alt="micha" style="width:20%" ></div>
-      <div class="item3">Micha (Mocha)</div>
-      <div class="item4">RM 6</div>
-      <div class="item5">	- Latte + choc <br>
-        - Rhythm with Jamaica so stamina mina <br> a a waka waka a a ( asal nyanyi lak )</div>
-    </div>
-
-    <div class="grid-container">
-
-      <div class="item2"><img src="sparkling.jpg" alt="sparkling" style="width:20%" ></div>
-      <div class="item3">Sparkling juice</div>
-      <div class="item4">RM 5</div>
-      <div class="item5">	- Flavored syrup + water + CO2<br>
-    	- Air buah sedut CO2
-      </div>
-    </div>
-
-
-    <div class="grid-container">
-
-      <div class="item2"><img src="fruittesso.jpg" alt="fruitesso" style="width:20%" ></div>
-      <div class="item3">Fruitesso</div>
-      <div class="item4">RM 7</div>
-      <div class="item5">	- Espresso + sparkling juice<br>
-      - Kopi rasa buah
-      </div>
-    </div>
-
-
-
-    <div class="grid-container">
-
-      <div class="item2"><img src="topicino.jpg" alt="topicino" style="width:20%" ></div>
-      <div class="item3">Topi Cino (cappuccino)</div>
-      <div class="item4">RM 5.50</div>
-      <div class="item5">		- Latte + foam <br>
-      -  otw buih lebih
-      </div>
-    </div>
-
-    <div class="grid-container">
-
-      <div class="item2"><img src="topicinooo.jpg" alt="topicinooo" style="width:20%" ></div>
-      <div class="item3">Topi CinooO (macchiato)</div>
-      <div class="item4">RM 5.50</div>
-      <div class="item5">		- Cappuccino + more foam <br>
-      -  Sama je macam atas, buih je lebih
-      </div>
-    </div>
 
 
 
