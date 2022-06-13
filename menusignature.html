@@ -27,11 +27,11 @@ img {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+    'menu menu menu main main right'
+    'menu menu menu footer footer footer';
   gap: 10px;
   background-color: beige;
-  padding: 10px;
+  padding: 5px;
 }
 
 .grid-container > div {
@@ -39,6 +39,20 @@ img {
   text-align: left;
   padding: 20px 0;
   font-size: 30px;
+}
+
+.grid-container {
+   display: grid;
+   grid-auto-columns: 1fr;
+}
+
+.grid-items {
+   grid-row: 1;
+}
+
+
+.item3, .item4{
+  font-weight: bold;
 }
 
 </style>
