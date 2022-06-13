@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Menu-signature</title>
+    <link rel="stylesheet" href="menuproject.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: 50;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu menu main main right'
+    'menu menu menu footer footer footer';
+  gap: 10px;
+  background-color: beige;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: beige;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container {
+   display: grid;
+   grid-auto-columns: 1fr;
+}
+
+.grid-items {
+   grid-row: 1;
+}
+
+
+.item3, .item4{
+  font-weight: bold;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ab8b72;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: beige;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+
+  </head>
+  <body>
+    <div class="header">
+      <a href="#default" class="logo">LARGH-NEST</a>
+      <div class="header-right">
+        <a class="active" href="#home">Menu</a>
+        <a href="#about">About us</a>
+        <a href="#cart">My Cart</a>
+      </div>
+    </div>
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Espresso</a>
+      <a href="#">Coffee</a>
+      <a href="#">Signature drinks</a>
+      <a href="#">Add ons</a>
+    </div>
+
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+
+
+
+    <h1 style="text-align: center">Signature drinks</h1>
+
+
+
+    <div class="grid-container">
+
+      <div class="item2"><img src="topicinooo.jpg" alt="topicinooo" style="width:20%" ></div>
+      <div class="item3">Ayo-gado! (Affogato)</div>
+      <div class="item4">RM 4</div>
+      <div class="item5">- Espresso + ice cream  <br>
+      - Ice scream you scream eh ada ice cream
+      </div>
+    </div>
+
+
+    <div class="grid-container">
+
+      <div class="item2"><img src="sparkling.jpg" alt="sparkling" style="width:20%" ></div>
+      <div class="item3">Sparkling juice</div>
+      <div class="item4">RM 5</div>
+      <div class="item5">- Flavored syrup + water + CO2<br>
+    	- Air buah sedut CO2
+      </div>
+    </div>
+
+
+    <div class="grid-container">
+
+      <div class="item2"><img src="fruittesso.jpg" alt="fruitesso" style="width:20%" ></div>
+      <div class="item3">Fruitesso</div>
+      <div class="item4">RM 7</div>
+      <div class="item5">- Espresso + sparkling juice<br>
+      - Kopi rasa buah
+      </div>
+    </div>
+
+
+
+
+<div class="footer">
+  <p>Contact us</p>
+</div>
+
+
+  </body>
+</html>
