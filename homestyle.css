@@ -191,3 +191,13 @@ header.sticky ul li:hover::after{
   color: #fff;
   margin-left: 15px;
 }
+
+.footer .footer-CS {
+  float: left;
+}
+.footer .footer-CS a {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 1px;
+}
