@@ -70,3 +70,11 @@ footer {
   background-color: rgb(173, 111, 87);
   color: white;
 }
+.footer .footer-CS {
+  float: left;
+}
+.footer .footer-CS a {
+  font-size: 15px;
+  color: #fff;
+  margin-left: 5px;
+}
