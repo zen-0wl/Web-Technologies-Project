@@ -1,76 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.6s;
-  padding: 40px 100px;
-  z-index: 1000;
-}
-
-header .icon {
-  position: relative;
-  font-weight: 700;
-  color: #62422b;
+* {box-sizing: border-box;}
+body { 
+  margin: 0;
+  font-family: Jacques Francois, sharif-sans;
+} 
+.header {
+    overflow: hidden;
+    background-color:rgb(246, 243, 197);
+    padding: 20px 10px;
+}      
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
   text-decoration: none;
-  font-size: 2em;
-  font-family: 'Quicksand', sans-serif;
-  text-shadow: 1px 0.5px #842222;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
 }
-
-header ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header a.shopLogo {
+  font-size: 25px;
+  font-weight: semi-bold;
 }
-
-header ul li {
-  position: relative;
-  list-style: none;
-  font-weight: bold;
+.header a:hover {
+  background-color: #ddd;
+  color: black;
 }
-
-header ul li a {
-  position: relative;
-  margin: 0 15px;
-  text-decoration: none;
-  color: #62422b;
-  text-shadow: 1px 1px 1px #842222;
-  letter-spacing: 2.5px;
-  font-weight: 500px;
-  transition: 0.6s;
-  z-index: 1000;
+.header a.active {
+  background-color: rgb(173, 111, 87);
+  color: white;
 }
-
-header ul li a:hover {
-  text-decoration: underline;
+.header-right {
+  float: right;
 }
-
-header.sticky {
-  padding: 15px 100px;
-  background: #62422b;
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
 }
-
-header.sticky .icon,
-header.sticky ul li a {
-  color: #fff;
-  text-shadow: none;
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(255, 250, 250);
+}
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+.browser {
+  background: white;
+}
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
 }
 .section-1{
   width: 100%;
   min-height: 90vh;
-  background-color: #F4ECE6;
+  background-color: #fbf2eb;
 }
 .container{
   width: 80%;
@@ -143,7 +137,7 @@ p{
 }
 
 .section-2{
-  background-color: #F4ECE6;
+  background-color: #fbf2eb;
   padding-top: 64px;
 }
 table, th, td{
@@ -171,7 +165,7 @@ td{
 .section-3{
   width: 100%;
   min-height: 130vh;
-  background-color: #F4ECE6;
+  background-color: #fff3eb;
 }
 .content-section .contacts h3::after{
   content:"";
@@ -212,20 +206,21 @@ td{
 .content-section .social i:hover{
   color:#3d3d3d;
 }
-
-.footer {
-  background-color: #62422b;
-  box-sizing: border-box;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   text-align: left;
-  padding: 25px 50px;
+  padding: 12px;
+  background-color: rgb(173, 111, 87);
+  color: white;
 }
-.footer .footer-logo {
-  float: right;
+.footer .footer-CS {
+  float: left;
 }
-.footer .footer-logo a {
-  display: inline-block;
-  font-size: 20px;
+.footer .footer-CS a {
+  font-size: 15px;
   color: #fff;
-  margin-left: 15px;
+  margin-left: 7px;
 }
